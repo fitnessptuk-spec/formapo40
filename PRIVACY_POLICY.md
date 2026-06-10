@@ -60,4 +60,4 @@ W przypadku wprowadzenia zmian w Aplikacji wpływających na sposób przetwarzan
 
 W razie pytań dotyczących niniejszej polityki prywatności, prosimy o kontakt pod adresem:
 
-**fitnessptuk@gmail.com**
+**info@fitapp.fitness**
