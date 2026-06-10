@@ -1,63 +1,63 @@
-# Polityka prywatności — Forma po 40
+# Privacy Policy — Fit After 40
 
-Data ostatniej aktualizacji: 10.06.2026
+Last updated: June 10, 2026
 
-Niniejsza polityka prywatności opisuje, w jaki sposób aplikacja **Forma po 40** ("Aplikacja") obsługuje dane użytkownika.
+This Privacy Policy describes how the **Fit After 40** application ("the App") handles user data.
 
-## 1. Najważniejsze w skrócie
+## 1. Key Points at a Glance
 
-- Aplikacja działa **w 100% offline** — nie wymaga połączenia z internetem.
-- Aplikacja **nie wymaga zakładania konta ani logowania**.
-- Aplikacja **nie zbiera, nie przechowuje na serwerach i nie udostępnia** żadnych danych osobowych.
-- Wszystkie wprowadzone dane pozostają **wyłącznie na urządzeniu użytkownika**.
-- Aplikacja **nie zawiera reklam, narzędzi analitycznych ani śledzących (np. Google Analytics, Firebase, Crashlytics)**.
+* The App operates **100% offline** and does not require an internet connection.
+* The App **does not require account creation or user login**.
+* The App **does not collect, store on servers, or share** any personal data.
+* All data entered by the user remains **exclusively on the user's device**.
+* The App **does not contain advertisements, analytics tools, or tracking technologies** (such as Google Analytics, Firebase, or Crashlytics).
 
-## 2. Jakie dane są przetwarzane i gdzie są przechowywane
+## 2. What Data Is Processed and Where It Is Stored
 
-W ramach korzystania z Aplikacji użytkownik może wprowadzić:
+While using the App, users may enter:
 
-- historię ukończonych treningów (data, wybrany protokół, czas trwania),
-- wpisy do dziennika wskaźników: obwód pasa, masa ciała, ciśnienie krwi, tętno spoczynkowe, ocena energii i snu, opcjonalna notatka o dolegliwości,
-- ustawienia przypomnienia (włączone/wyłączone, godzina).
+* a history of completed workouts (date, selected protocol, duration),
+* health metrics journal entries: waist circumference, body weight, blood pressure, resting heart rate, energy and sleep ratings, and an optional note about discomfort or symptoms,
+* reminder settings (enabled/disabled, time).
 
-Wszystkie powyższe dane są zapisywane **wyłącznie lokalnie**, w lokalnej bazie danych na urządzeniu (Room/SQLite) oraz w lokalnych preferencjach aplikacji. Dane te:
+All of the above data is stored **exclusively locally** on the user's device, within a local database (Room/SQLite) and local application preferences. This data:
 
-- nie są wysyłane do twórcy Aplikacji ani do jakichkolwiek osób trzecich,
-- nie opuszczają urządzenia użytkownika w żadnym automatycznym procesie,
-- są usuwane automatycznie wraz z odinstalowaniem Aplikacji lub mogą zostać wcześniej wyczyszczone przez użytkownika ręcznie (ustawienia systemowe → aplikacje → Forma po 40 → wyczyść dane).
+* is not transmitted to the App developer or any third parties,
+* never leaves the user's device through any automatic process,
+* is automatically removed when the App is uninstalled, or can be deleted earlier by the user manually (System Settings → Apps → Fit After 40 → Clear Data).
 
-## 3. Udostępnianie danych przez użytkownika
+## 3. User-Initiated Data Sharing
 
-Aplikacja umożliwia wygenerowanie graficznej "karty miesięcznej" z podsumowaniem postępów (np. liczba treningów, streak, zmiana obwodu pasa) i jej udostępnienie za pomocą **systemowego okna udostępniania Androida** (np. do mediów społecznościowych, komunikatora, e-maila).
+The App allows users to generate a graphical "monthly summary card" showing their progress (e.g., number of workouts completed, streak, waist circumference change) and share it using the **Android system share sheet** (e.g., to social media, messaging apps, or email).
 
-- Wygenerowanie i udostępnienie karty następuje **wyłącznie z inicjatywy użytkownika** po naciśnięciu przycisku "Pochwal się".
-- Twórca Aplikacji nie ma dostępu do tej karty ani informacji o tym, czy i gdzie została udostępniona — cały proces odbywa się lokalnie, za pośrednictwem aplikacji wybranej przez użytkownika z systemowego menu.
-- Plik graficzny jest tymczasowo zapisywany w katalogu pamięci podręcznej Aplikacji i służy wyłącznie do przekazania go wybranej aplikacji docelowej.
+* The generation and sharing of the summary card occurs **solely at the user's initiative** after pressing the "Share Your Progress" button.
+* The App developer has no access to the summary card or any information about whether or where it was shared. The entire process takes place locally through the application selected by the user from the Android share menu.
+* The image file is temporarily stored in the App's cache directory solely for the purpose of transferring it to the selected destination application.
 
-## 4. Uprawnienia wykorzystywane przez Aplikację
+## 4. Permissions Used by the App
 
-| Uprawnienie | Cel wykorzystania |
-|---|---|
-| **Wibracje** (`VIBRATE`) | Sygnalizacja dotykowa podczas treningu (zmiana ćwiczenia, odliczanie końcowe, zakończenie sesji). |
-| **Powiadomienia** (`POST_NOTIFICATIONS`) | Wyświetlenie opcjonalnego, codziennego przypomnienia o treningu — wyłącznie jeśli użytkownik włączy tę funkcję. |
-| **Uruchomienie po restarcie** (`RECEIVE_BOOT_COMPLETED`) | Ponowne ustawienie zaplanowanego przypomnienia po ponownym uruchomieniu telefonu lub aktualizacji Aplikacji — wyłącznie jeśli przypomnienie było wcześniej włączone. |
+| Permission                                    | Purpose                                                                                                        |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **Vibration** (`VIBRATE`)                     | Haptic feedback during workouts (exercise changes, final countdown, session completion).                       |
+| **Notifications** (`POST_NOTIFICATIONS`)      | Displaying an optional daily workout reminder, only if enabled by the user.                                    |
+| **Run at Startup** (`RECEIVE_BOOT_COMPLETED`) | Restoring scheduled reminders after a device restart or App update, only if reminders were previously enabled. |
 
-Żadne z powyższych uprawnień nie jest wykorzystywane do zbierania, przesyłania ani udostępniania danych.
+None of the above permissions are used to collect, transmit, or share user data.
 
-## 5. Przypomnienia (powiadomienia lokalne)
+## 5. Reminders (Local Notifications)
 
-Funkcja przypomnień działa w całości lokalnie przy użyciu mechanizmów systemu Android (`AlarmManager`, lokalne powiadomienia). Aplikacja sprawdza lokalnie zapisaną historię treningów, aby nie wyświetlać przypomnienia, jeśli trening na dany dzień został już ukończony. Żadne dane nie są przy tym wysyłane na zewnątrz.
+The reminder feature operates entirely locally using Android system mechanisms (`AlarmManager` and local notifications). The App checks the locally stored workout history to avoid displaying a reminder if the workout for that day has already been completed. No data is transmitted externally during this process.
 
-## 6. Dzieci
+## 6. Children
 
-Aplikacja jest skierowana do osób dorosłych (40+) i nie jest przeznaczona dla dzieci. Aplikacja nie zbiera żadnych danych, w tym danych dzieci.
+The App is intended for adults aged 40 and older and is not designed for children. The App does not collect any data, including data relating to children.
 
-## 7. Zmiany w polityce prywatności
+## 7. Changes to This Privacy Policy
 
-W przypadku wprowadzenia zmian w Aplikacji wpływających na sposób przetwarzania danych, niniejsza polityka zostanie odpowiednio zaktualizowana wraz ze zmianą daty na początku dokumentu.
+If changes are made to the App that affect how data is processed, this Privacy Policy will be updated accordingly, along with the revision date at the beginning of this document.
 
-## 8. Kontakt
+## 8. Contact
 
-W razie pytań dotyczących niniejszej polityki prywatności, prosimy o kontakt pod adresem:
+If you have any questions regarding this Privacy Policy, please contact:
 
-**info@fitapp.fitness**
+**[info@fitapp.fitness](mailto:info@fitapp.fitness)**
